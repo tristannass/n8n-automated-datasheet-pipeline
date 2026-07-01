@@ -1,0 +1,20 @@
+services:
+    n8n:
+        image: docker.n8n.io/n8nio/n8n
+        restart: unless-stopped
+        ports:
+            - "5678:5678"
+        environment:
+            - GENERIC_TIMEZONE=Europe/Paris
+            - TZ=Europe/Paris
+            - WEBHOOK_URL=http://localhost:5678/
+            - N8N_RUNNERS_ENABLED=true
+            - N8N_RESTRICT_FILE_ACCESS_TO=/files;/obsidian;/home/node/.n8n-files
+            - NODES_EXCLUDE=
+        volumes:
+            - n8n_data:/home/node/.n8n
+            - ./local-files:/files
+            - "/Users/nastib/Documents/Obsidian Vault/datasheets:/obsidian"
+
+volumes:
+    n8n_data:
