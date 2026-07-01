@@ -9,7 +9,7 @@
 
 > **Ce projet est une preuve de concept (PoC) d'automatisation de bout en bout. Il vise à transformer des documents techniques bruts (PDF) en une base de connaissances structurée et exploitable, en utilisant l'IA générative et des workflows conteneurisés.**
 
-En 2e année de cycle d'ingénieur (Bac+4) et activement à la recherche d'une alternance en Data Science / IA pour septembre 2026 (avec un fort intérêt pour les problématiques industriels), j'ai conçu cette architecture pour démontrer mes compétences en automatisation logicielle et intégration LLM.\
+En 2e année de cycle d'ingénieur (Bac+4) et activement à la recherche d'une alternance en Data Science / IA pour septembre 2026 (avec un fort intérêt pour les problématiques industriels), j'ai conçu cette architecture pour démontrer mes compétences en automatisation logicielle et intégration LLM.
 
 **Objectifs :**
 1. **Extraction :** Parcourir automatiquement des datasheets de composants électroniques.
@@ -17,7 +17,7 @@ En 2e année de cycle d'ingénieur (Bac+4) et activement à la recherche d'une a
 3. **Autonomie :** Garantir un pipeline robuste, géré de bout en bout sans intervention humaine.
 ___
 ## ⚙️ Architecture technique
-Le système repose sur une approche orchestrée localement, faisant le pont entre le stockage de la machine hôte, l'intelligence distante (API) et les outils collaboratifs.\
+Le système repose sur une approche orchestrée localement, faisant le pont entre le stockage de la machine hôte, l'intelligence distante (API) et les outils collaboratifs.
 
 ![Diagramme d'architecture du pipeline](docs/architecture.png)
 - **Orchestrateur :** n8n (hébergé en local via Docker Compose)
